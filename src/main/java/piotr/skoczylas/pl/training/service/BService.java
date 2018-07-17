@@ -1,10 +1,12 @@
-package piotr.skoczylas.pl.rentoffice.service;
-/*
+package piotr.skoczylas.pl.training.service;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.stereotype.Service;
-import piotr.skoczylas.pl.rentoffice.repository.BRepository;
+import piotr.skoczylas.pl.training.repository.BRepository;
 
 @Service
+@Configurable
 public class BService {
     private final BRepository bRepository;
 
@@ -13,4 +15,3 @@ public class BService {
         this.bRepository = bRepository;
     }
 }
-*/

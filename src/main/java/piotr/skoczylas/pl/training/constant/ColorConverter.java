@@ -8,11 +8,11 @@ public class ColorConverter implements AttributeConverter<Color, String> {
 
     @Override
     public String convertToDatabaseColumn(Color color) {
-        return color.getShortName();
+        return (color == null ? null : color.getShortName());
     }
 
     @Override
     public Color convertToEntityAttribute(String dbData) {
-        return Color.fromShortName(dbData);
+        return (dbData == null ? null : Color.fromShortName(dbData));
     }
 }

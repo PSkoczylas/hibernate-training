@@ -1,4 +1,13 @@
 package piotr.skoczylas.pl.training.model;
 
-public class Car {
+import lombok.Getter;
+import lombok.Setter;
+
+import javax.persistence.Entity;
+
+@Entity
+@Getter
+@Setter
+public class Car extends Vehicle {
+
 }

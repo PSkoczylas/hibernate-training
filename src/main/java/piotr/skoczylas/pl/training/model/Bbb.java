@@ -1,20 +1,18 @@
-package piotr.skoczylas.pl.rentoffice.model;
-/*
+package piotr.skoczylas.pl.training.model;
+
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity
 @Getter
 @Setter
 public class Bbb {
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
     private long id;
 
-    //@ManyToOne
-    //private Aaa aaa;
+    @ManyToOne
+    private Aaa aaa;
 }
-*/

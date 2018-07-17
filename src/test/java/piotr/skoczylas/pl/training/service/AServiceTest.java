@@ -1,9 +1,9 @@
-package piotr.skoczylas.pl.rentoffice.service;
+package piotr.skoczylas.pl.training.service;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mock;
-import piotr.skoczylas.pl.rentoffice.repository.ARepository;
+import piotr.skoczylas.pl.training.repository.ARepository;
 
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;

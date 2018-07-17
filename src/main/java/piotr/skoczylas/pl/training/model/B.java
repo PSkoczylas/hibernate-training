@@ -1,8 +1,14 @@
-package piotr.skoczylas.pl.rentoffice.model;
+package piotr.skoczylas.pl.training.model;
+import lombok.Getter;
+import lombok.Setter;
+
 import javax.persistence.*;
 
+@Getter
+@Setter
 @Entity
 public class B {
+    @GeneratedValue
     @Id
     private long id;
 

@@ -1,4 +1,4 @@
-package piotr.skoczylas.pl.rentoffice.model;
+package piotr.skoczylas.pl.training.model;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -8,11 +8,12 @@ import javax.persistence.*;
 @Getter
 @Setter
 public class A {
+    @GeneratedValue
     @Id
     private long id;
 
-    //@OneToOne
-    //private B b;
+    @OneToOne
+    private B b;
 
     //@OneToMany(mappedBy = "A")
     //private List<B> b = new ArrayList<>();
